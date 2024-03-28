@@ -1,11 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skill and Build Training</title>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>This is a test</h1>
+    <nav>
+        <label>Clayseo Agency</label>
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li><a href=about.html>About</a></li>
+        </ul>
+    </nav>
+    <br>
+    <section class="bgstyle">
+        <h1 id="colordiff">Welcome!</h1>
+        <br>
+    </section>
+    <br>
+    <h2> Introduction </h2>
+    <p> Welcome. Please press the button below to see more of the page! </p>
+    <br>
+    <aside class="animation1-start">
+        <p class="animation1"></p>
+    </aside>
+    <br id="special">
+    <button id="start1"> Click Here </button>
+    <br>
+    <aside id="astart1">
+        <h2> JavaScript Example </h2>
+        <p>
+            The following is an example of JavaScript. After clicking "Submit",
+            the rest of the page will appear showing infomation about me.
+        </p>
+        <form>
+            <br>
+            <aside class="container">
+                <input type="text" class="input" id="text-js"
+                    placeholder="Please enter your full name."
+                    required
+                    pattern="[A-Za-z ]+"
+                    minlength="5"
+                    maxlength="30"
+                    title="First Name should only contain upper and lowercase letters (limit 15)">
+            </aside>
+            <button id="start2" type="button" onclick="firstScript(document.getElementById('text-js').value)">Submit</button>
+            <br>
+        </form>
+    </aside>
+    <aside id="astart2">
+        <br>
+        <h2 id="info-change"> (This will change) </h2>
+        <br>
+        <h2>
+            The following picture contains an animation. Hovering over it will
+            show/trigger the animation.
+        </h2>
+        <br>
+        <img class="original-v2" src="./Photos/pexels_bich_tran_computer.jpg" width="400" height="300" alt="Computer background">
+        <br>
+        <aside class="close2">
+            <h2>Professional Interests</h2>
+            <p class="style1">
+                I really like learning about security in any sort of way. I look forward
+                to taking security courses as part of this major as it was one of the
+                main reason I picked the major. Learning about different ways hackers
+                exploit machines and different ways security has evolved pique my interest.
+                I also enjoy learning coding even if I am not currently proficient at it.
+                To me, making websites and features such as log in page are super cool.
+            </p>
+        </aside>
+        <aside class="close2">
+            <h2>Current Thoughts</h2>
+            <p class="style1">
+                So far, I really like the University of Washington Tacoma. I met a lot of good
+                people as well as learned a lot of things from my professors. Overall, there
+                is no regret from me when I chose to go here instead of attending a different
+                college. Since I am still in Junior year, my mind is still set on trying to
+                get into the cybersecurity field. It was the inital field that interested me the
+                most because I love learning about how the internet works.
+            </p>
+        </aside>
+    </aside>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="script.js"></script>
+    <footer>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="data.html">Contact Us!</a></li>
+            <li><a href="https://www.pexels.com">Pexels</a></li>
+        </ul>
+        <p id="footer"> Copyright 2023 </p>
+    </footer>
 </body>
 </html>
