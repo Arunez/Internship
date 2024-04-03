@@ -26,60 +26,12 @@ body::-webkit-scrollbar {
 /*
     The following classes will be selected to have their background
     change to a specific picture that does not repeat itself, will
-    be centered and cover's the page neatly.
-*/
-.dogbg {
-    background-image: url(./Photos/pexels-lisa-fotios-dogbg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-}
-/*
-    The following classes will be selected to have their background
-    change to a specific picture that does not repeat itself, will
-    be centered and cover's the page neatly.
-*/
-.foodbg {
-    background-image: url(./Photos/pexels-ella-olsson-foodbg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-}
-/*
-    The following classes will be selected to have their background
-    change to a specific picture that does not repeat itself, will
-    be centered and cover's the page neatly.
-*/
-.hobbybg {
-    background-image: url(./Photos/pexels-surene-palvie-hobbybg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-}
-/*
-    The following classes will be selected to have their background
-    change to a specific picture that does not repeat itself, will
-    be centered and cover's the page neatly.
-*/
-.databg {
-    background-image: url(./Photos/pexels-good-free-photoscom-1421837.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-}
-/*
-    The following classes will be selected to have their background
-    change to a specific picture that does not repeat itself, will
     be centered and cover's the page neatly. Not only that, it will
     serve as the home.html's container for my name and a background
     touches the nav bar.
 */
 .bgstyle {
-    background-image: url(./Photos/pexels-craig-adderley-1563356-h1bg.png);
+    background-image: url(https://images.pexels.com/photos/6580217/pexels-photo-6580217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -100,75 +52,12 @@ h1 {
     padding: 10px 20px;
 }
 /*
-    This ensures that the p element with the class name called close2
-    will be properly formatted.
-*/
-.close2 {
-    display: inline-block;
-}
-/* 
-    The following will apply to all h1 present on pages that uses this css.
-    Text-align, font-style/size, border-bottom and margin will all be
-    manipulated
-*/
-/*
     border-bottom allows lines to show up at the bottom of the element
 */
 h1 {
     text-align: center;
     font-style: italic;
     font-size: 40px;
-}
-/*
-    These are used to allow these classes' texts change color to what was
-    stated.
-*/
-.dogstuff1 {
-    color: ghostwhite;
-    transition: 200ms;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-.dogstuff2 {
-    color: ghostwhite;
-    transition: 200ms;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-.dogstuff3 {
-    color: ghostwhite;
-    transition: 200ms;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-/*
-    These hovers are used to allow the border of the images to have
-    animations. In this case, the borders will change to a different
-    color.
-*/
-.dogstuff1:hover {
-    transform: scale(1.1);
-    transition: .2s
-}
-.dogstuff2:hover {
-    transform: scale(1.1);
-    transition: .2s
-}
-.dogstuff3:hover {
-    transform: scale(1.1);
-    transition: .2s
-}
-.dogstuffv1 {
-    color: ghostwhite;
-}
-.foodstuff {
-    color: ghostwhite;
-}
-.hobbybg {
-    color: ghostwhite;
-}
-.datastuff {
-    color: ghostwhite;
 }
 /* 
     Formats the nav element to be contained at the top of the page
@@ -244,10 +133,10 @@ footer a:hover {
     change its position, size and color
 */
 label {
-    font-size: 50px;
+    font-size: 40px;
     color: ghostwhite;
     font-style: italic;
-    padding: 0 75px;
+    padding: 0 60px;
     line-height: 100px;
 }
 label.validation {
@@ -312,12 +201,6 @@ p {
     text-align: center;
     white-space: normal;
     margin: 2px auto 2px;
-    width: 500px;
-}
-.style1 {
-    font: 125%;
-    text-align: center;
-    white-space: normal;
     width: 500px;
 }
 /* 
@@ -518,54 +401,6 @@ p {
         color: saddlebrown;
     }
 }
-/*
-    The following will be the reason the animation for a loading bar.
-    The position relative and position absolute allows for both to know
-    how to position themselves while absolute allows the bar to know 
-    where to start. Clint Fontanella was a huge help for some of the
-    properties.
-*/
-.animation1-start {
-    display: block;
-    position: relative;
-    margin: auto;
-    height: 24px;
-    width: 50%;
-    border: 5px solid black;
-    border-radius: 15px;
-}
-/*
-    The following is responsible for the animtion of the purple bar.
-*/
-.animation1 {
-    position: absolute;
-    background-color: rebeccapurple;
-    width: 0px;
-    height: 10px;
-    border-radius: 15px;
-    animation: progress 4s infinite linear;
-}
-/*
-    Allows for different percetages to have a specific bar size.
-*/
-@keyframes progress {
-    0% {
-        width: 0%
-    }
-    25% {
-        width: 50%
-    }
-    50% {
-        width: 75%
-    }
-    75% {
-        width: 85%
-    }
-    100% {
-        width: 100%
-    }
-}
-
 img.sideimage {
     float: right;
     padding: 10px;
@@ -663,76 +498,6 @@ form {
     border: 1px solid gray;
     border-radius: 4px;
 }
-/*
-    The following were used to allow the slideshow feature to be present on
-    the website. Hiader was a big help because he showed which key elements
-    were needed while the rest are work of mine. 
-*/
-.slider {
-    overflow: hidden;
-}
-/*
-    The following styles the figure and the animation.
-*/
-.slider figure 
-{
-    left: 0;
-    margin: 0;
-    animation: 8s slider infinite;
-    position: relative;
-    width: 100%;
-}
-/*
-    Changes the image to look as intended.
-*/
-.slider figure img
-{
-    float: left;
-    width: 20%;
-}
-/*
-    The following allows the slideshow to function corrently. It allows the
-    moment of the pictures to follow a certain pattern; which is usually
-    going towards the left side of the screen.
-*/
-@keyframes slider
-{
-    0% {
-        left: 0;
-    }
-
-    20% {
-        left: 0;
-    }
-
-    25% {
-        left: -50%;
-    }
-
-    45% {
-        left: -50%;
-    }
-
-    50% {
-        left: -100%;
-    }
-
-    70% {
-        left: -100%;
-    }
-
-    75% {
-        left: -150%;
-    }
-
-    95% {
-        left: -150%;
-    }
-
-    100% {
-        left: -250%;
-    }
-}
 /* 
     This is used to resize the image to allow some room for genuine sizes.
 */
@@ -753,35 +518,6 @@ iframe {
     border-width: 4px;
     border-style: solid;
     border-color: black;
-}
-/*
-    The following is used to change the characteristics of the the p element
-    inside the aside element in scenary. In here, the background color,
-    edges, font size, location and paddings were changed to allow the text to
-    look more fluid.
-*/
-.scene1 {
-    font: 125%;
-    text-align: center;
-    white-space: normal;
-    margin: 2px auto 2px;
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    color: white;
-    border-radius: 25px;
-}
-.ascene1 {
-    display: grid;
-    place-content: center;
-    align-content: center;
-}
-/*
-    This allows the original-v1 class to have some animation
-    for the key frames.
-*/
-.original-v1:hover {
-    animation: shake 2.5s linear;
 }
 
 /*
@@ -818,81 +554,4 @@ iframe {
     40%, 100% {
         transform: rotateZ(0);
     }
-}
-/*
-    The following was used for the foods.html site. I initialized
-    a grid for the whole site to be able to apply contents in a 
-    well fashioned manner. Witht he help of w3school and a Mark, I was
-    able to succesfully apply the codes below perfectly.
-    The grid-column applies the correct grid format for the .card class
-    while the justify-content and align-items help with centering the
-    contents inside. Last but not least, the backgrounds are used for the
-    picture found inside the .card class. 
-*/
-.food1 {
-    grid-column: span 4;
-    height: 7rem;
-    background-image: url("./Photos/pexels-abhinav-goswami-291528.jpg");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 13px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-width: 4px;
-    border-style: solid;
-    border-color: black;
-}
-.food2 {
-    grid-column: span 4;
-    height: 7rem;
-    background-image: url("./Photos/pexels-dana-tentis-262959.jpg");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 13px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-width: 4px;
-    border-style: solid;
-    border-color: black;
-}
-.food3 {
-    grid-column: span 4;
-    height: 7rem;
-    background-image: url("./Photos/pexels-pixabay-461198.jpg");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 13px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-width: 4px;
-    border-style: solid;
-    border-color: black;
-}
-/*
-    The following was used for the foods.html site. I initialized
-    a grid for the whole site to be able to apply contents in a 
-    well fashioned manner. Witht he help of w3school and a Mark, I was
-    able to succesfully apply the codes below perfectly. This .grid class
-    applies the grid to the page. It will correctly format the page.
-*/
-.grid {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
-    grid-auto-rows: auto;
 }
