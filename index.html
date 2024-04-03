@@ -1,65 +1,97 @@
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>index</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Clayseo Agency Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <label>Clayseo Agency</label>
-        <ul>
-            <li><a href=index.html>Home</a></li>
-            <li><a href=about.html>About</a></li>
-            <li><a href=contact.html>Contact</a></li>
-        </ul>
-    </nav>
-    <br>
-    <section class="bgstyle">
-        <h1 id="colordiff">Welcome!</h1>
+    <main>
+        <div class="big-wrapper light">
+            <img src="./img/shape.png" alt="" class="shape" />
+        
+        <!-- Start of my header -->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="./pics/Google.png" alt="Logo" />
+                    <h3>Clayseo Agency</h3>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href=about.html>About</a></li>
+                    <li><a href=contact.html>Contact</a></li>
+                </ul>
+            </div>
+            <div class="overlay">
+            </div>
+            <div class="hamburger-menu">
+                    <div class="bar">
+                    </div>
+                </div>
+            </div>
+        </header>
         <br>
-    </section>
-    <br>
-    <h2> Introduction </h2>
-    <br>
-    <p> We help bath and kitchen remodelors generate more leads with our local, paid, and organic
-        SEO framework.
-    </p>
-    <br>
-    <aside id="astart2">
         <br>
-        <h2> (Placeholder) </h2>
         <br>
-        <h2>
-            The following video contains showcases my clients! Feel free to watch and check them out!
-        </h2>
         <br>
-        <iframe width="400" height="300" src="https://www.youtube.com/embed/8XAIIGdWGUA" frameborder="0" allowfullscreen></iframe>
-        <br>
-        <aside class="close2">
-            <h2>Professional Interests</h2>
-            <p class="style1">
-                I really like learning about security in any sort of way. I look forward
-                to taking security courses as part of this major as it was one of the
-                main reason I picked the major. Learning about different ways hackers
-                exploit machines and different ways security has evolved pique my interest.
-                I also enjoy learning coding even if I am not currently proficient at it.
-                To me, making websites and features such as log in page are super cool.
+
+        <!-- Main Landing Page Coding -->
+        <div class="showcase-area">
+            <div class="container">
+                <div class="left">
+                    <div class="big-title">
+                        <h1>Future is here,</h1>
+                        <h1>Start Exploring now.</h1>
+                    </div>
+            <p class="text">
+                We help bath and kitchen remodelers generate more leads using our local, paid, and organic SEO framework!
             </p>
-        </aside>
-    </aside>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="https://www.pexels.com">Pexels</a></li>
-        </ul>
-        <p id="footer"> Copyright 2024 </p>
-    </footer>
+
+            <div class="cta">
+                <a href=contact.html class="btn">Get started</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="https://images.pexels.com/photos/6580217/pexels-photo-6580217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
+                        alt="Renovation Image" 
+                        class="bathroom" />
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="bottom-area">
+            <div class="container">
+                <button class="toggle-btn">
+                    <i class="far fa-moon"></i>
+                    <i class="far fa-sun"></i>
+                </button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <br>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.pexels.com">Pexels</a></li>
+            </ul>
+            <br>
+            <p id="footer"> Copyright 2024 </p>
+        </footer>
+    </div>
+</main>
+
+<!-- JavaScript Files -->
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+<script src="apps.js"></script>
 </body>
 </html>

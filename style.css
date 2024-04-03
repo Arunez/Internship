@@ -1,557 +1,423 @@
-/* 
-    The following style.css will modify pages for my website. From h1 to img,
-    there will be specific changes that will either change the text for all
-    or that specific one. W3School is a huge help for showing how margin,
-    padding, display, line-height, width/height, and radius. 
-*/
-/* 
-    Resets the page's formatting to ensure no inheritance was received
-*/
-* {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.light {
+    --mainColor: #64bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #f1f8fc;
+    --darkOne: #312f3a;
+    --darkTwo: #45424b;
+    --lightOne: #919191;
+    --lightTwo: #aaa;
+}
+
+.dark {
+    --mainColor: #64bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #192e3a;
+    --darkOne: #f3f3f3;
+    --darkTwo: #fff;
+    --lightOne: #ccc;
+    --lightTwo: #e7e3e3;
+}
+
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-body {
-    background-color: aliceblue;
-    position: relative;
-    min-height: 100vh;
 }
 
-body::-webkit-scrollbar {
-    display: none;
+body {
+    font-family: "Poppins", sans-serif;
 }
-/*
-    The following classes will be selected to have their background
-    change to a specific picture that does not repeat itself, will
-    be centered and cover's the page neatly. Not only that, it will
-    serve as the home.html's container for my name and a background
-    touches the nav bar.
-*/
-.bgstyle {
-    background-image: url(https://images.pexels.com/photos/6580217/pexels-photo-6580217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 0px;
-    height: 50vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    align-items: center;
-}
-/*
-    This h1 is used to initialize a background color to my name for
-    home.html
-*/
-h1 {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-}
-/*
-    border-bottom allows lines to show up at the bottom of the element
-*/
-h1 {
-    text-align: center;
-    font-style: italic;
-    font-size: 40px;
-}
-/* 
-    Formats the nav element to be contained at the top of the page
-    with the background set to black to reflect the region affected
-*/
-nav {
-    height: 100px;
-    width: 100%;
-    background-color: black;
-    margin-bottom: -19px;
+
+.stop-scrolling {
+    height: 100%;
     overflow: hidden;
 }
-/* 
-    These are all a series of css styles for the footer element. Using
-    these, the footer will be able to dynamically position itself
-    as well as be able to have some hover effect, good sizing, italics,
-    and good backround height. The following was achieved with the help
-    of freecodecamp.org
-*/
-footer {
-    position: absolute;
-    bottom: 0px;
-    height: 80px;
+
+img {
     width: 100%;
-    background-color: black;
-    text-align: center;
 }
-/* 
-    These are all a series of css styles for the footer element. Using
-    these, the footer will be able to dynamically position itself
-    as well as be able to have some hover effect, good sizing, italics,
-    and good backround height. The following was achieved with the help
-    of freecodecamp.org
-*/
-footer ul {
-    margin: 0;
-    padding: 0;
+
+a {
+    text-decoration: none;
 }
-footer li {
+
+.big-wrapper {
+    position: relative;
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    position: relative;
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+}
+
+header {
+    position: relative;
+    z-index: 70;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 0.6rem;
+    margin-top: -0.6rem;
+}
+
+.logo h3 {
+    color: var(--darkTwo);
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.links a {
+    color: var(--lightTwo);
+    margin-left: 4.5rem;
     display: inline-block;
-    margin: 20px 10px;
+    transition: 0.3s;
 }
-/* 
-    These are all a series of css styles for the footer element. Using
-    these, the footer will be able to dynamically position itself
-    as well as be able to have some hover effect, good sizing, italics,
-    and good backround height. The following was achieved with the help
-    of freecodecamp.org
-*/
-footer ul li a, p#footer {
-    color: lightslategray;
-    font-style: italic;
-    font-size: 10px;
-    margin-bottom: -10px;
+
+.links a:hover {
+    color: var(--hoverColor);
+    transform: scale(1.05);
 }
-footer ul li a {
-    color: ghostwhite;
-    font-style: italic;
-    font-size: 20px;
-}
-/* 
-    These are all a series of css styles for the footer element. Using
-    these, the footer will be able to dynamically position itself
-    as well as be able to have some hover effect, good sizing, italics,
-    and good backround height. The following was achieved with the help
-    of freecodecamp.org
-*/
-footer a:hover {
-    color: lightslategray;
-    transition: .2s;
-}
-/* The following will apply the edits to my label element which will
-    change its position, size and color
-*/
-label {
-    font-size: 40px;
-    color: ghostwhite;
-    font-style: italic;
-    padding: 0 60px;
-    line-height: 100px;
-}
-label.validation {
-    color: black;
-    font-size: unset;
-    padding: revert;
-}
-/* 
-    The following will put the ul element to the right side of the margin
-    and will make sure that it will be scooted instead of being near the edge
-*/
-nav ul {
-    float: right;
-    margin-right: 30px;
-}
-/* 
-    The following ensures that instead of top to bottom, the display will
-   be left to right for the format of the list 
-*/
-nav li {
+
+.btn {
     display: inline-block;
-    margin: 0 8px;
-    line-height: 100px;
-    font-size: 20px;
+    padding: 0.9rem 1.9rem;
+    color: #fff !important;
+    background-color: var(--mainColor);
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
 }
-/*
-    The following CSS targest the a under the il element. This will
-    change the font color, style and padding of each words (how far away
-    from top/bottom and left/right)
-*/
-nav ul li a {
-    color: ghostwhite;
-    font-style: italic;
-    padding: 1px 6px;
+
+.btn:hover {
+    background-color: var(--hoverColor);
+    transform: scale(1) !important;
 }
-/* 
-    The following will apply to all h2 present on pages that uses this css.
-    text-align, font-style/size, border-bottom and margin will all be
-    manipulated
-*/
-h2 {
-    text-align: center;
-    font-style: italic;
-    /* border-bottom: 2px solid #e0e0e0; */
-    margin: auto
+
+.hamburger-menu {
+    position: relative;
+    z-index: 99;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
 }
-/*
-    a:hover ensures that user can hover over any of the li a words and be
-    able to see a responsive change. 
-*/
-li a:hover {
-    color: lightslategray;
-    transition: .2s;
+
+.hamburger-menu .bar {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: var(--darkTwo);
+    border-radius: 3px;
+    transition: 0.5s;
 }
-/* 
-    The following will apply to all h2 present on pages that uses this css.
-    Text-align is used as well as white-space to configure the length of the
-    paragraph.
-*/
-p {
-    font: 125%;
-    text-align: center;
-    white-space: normal;
-    margin: 2px auto 2px;
+
+.bar::before,
+.bar::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--darkTwo);
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.bar::before {
+    transform: translateY(-8px);
+}
+
+.bar::after {
+    transform: translateY(8px);
+}
+
+.big-wrapper.active .hamburger-menu .bar {
+    background-color: transparent;
+}
+
+.big-wrapper.active .bar::before {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.big-wrapper.active .bar::after {
+    transform: translateY(0) rotate(45deg);
+}
+
+.showcase-area .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.big-title {
+    font-size: 1.4rem;
+    color: var(--darkOne);
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+.text {
+    color: var(--lightOne);
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+}
+
+.showcase-area .btn {
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+}
+
+.bathroom {
+    grid-column: span 2;
+    margin-left: 5%;
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.toggle-btn {
+    display: inline-block;
+    border: none;
+    background: var(--darkTwo);
+    color: var(--backgroundColor);
+    outline: none;
+    cursor: pointer;
+    height: 39px;
+    width: 39px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.toggle-btn i {
+    line-height: 39px;
+}
+
+.toggle-btn:hover {
+    background: var(--mainColor);
+}
+
+.big-wrapper.light .toggle-btn i:last-child {
+    display: none;
+}
+
+.big-wrapper.light .toggle-btn i:first-child {
+    display: block;
+}
+
+.big-wrapper.dark .toggle-btn i:last-child {
+    display: block;
+}
+
+.big-wrapper.dark .toggle-btn i:first-child {
+    display: none;
+}
+
+.shape {
+    position: absolute;
+    z-index: 0;
     width: 500px;
-}
-/* 
-    The following will apply to all img present on pages that uses this css.
-    The image is converted to a block level element and then margin is set
-    to auto to center the image. Border is modified to apply specific styles.
-*/
-.original1 {
-    display: block;
-    margin: auto;
-    border-width: 4px;
-    border-style: solid;
-    border-color: darkslategray;
-}
-.original2 {
-    display: block;
-    margin: auto;
-    border-width: 4px;
-    border-style: solid;
-    border-color: darkslategray;
-}
-/*
-    The animation for the picture. It is for the final website project for
-    Professor Grant's place.
-*/
-.original1:hover {
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-duration: 1.3s;
+    bottom: -180px;
+    left: -15px;
+    opacity: 0.1;
 }
 
-@keyframes color-change {
+.copy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    animation: appear 1s 1 both;
+}
+
+@keyframes appear {
     0% {
-        border-color: darkred;
-    }
-
-    25% {
-        border-color: rebeccapurple;
-    }
-
-    50% {
-        border-color: darkslateblue;
-    }
-
-    75% {
-        border-color: #8F0018;
-    }
-
+    clip-path: circle(30% at -25% -25%);
+}
     100% {
-        border-color: #3d5214;
-    }
+    clip-path: circle(150% at 0 0);
 }
-/* 
-    The following will apply to all img present on pages that uses this css.
-    The image is converted to a block level element and then margin is set
-    to auto to center the image. Border is modified to apply specific styles.
-*/
-.original2 {
+}
+
+@media screen and (max-width: 870px) {
+    .hamburger-menu {
+    display: flex;
+}
+
+.links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainColor);
+    z-index: 95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+.links ul {
+    flex-direction: column;
+}
+
+.links a {
+    color: #fff;
+    margin-left: 0;
+    padding: 2rem 0;
+}
+
+.links .btn {
+    background: none;
+}
+
+.overlay {
     display: block;
-    margin: auto;
-    border-width: 4px;
-    border-style: solid;
-    border-color: darkslategray;
-}
-    /*
-    The animation for the picture. It is for the final website project for
-    Professor Grant's place.
-*/
-.original2:hover {
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-duration: 1.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
 }
 
-@keyframes color-change {
-    0% {
-        border-color: darkred;
-    }
-
-    25% {
-        border-color: rebeccapurple;
-    }
-
-    50% {
-        border-color: darkslateblue;
-    }
-
-    75% {
-        border-color: #8F0018;
-    }
-
-    100% {
-        border-color: #3d5214;
-    }
-}
-/* 
-    The following will apply to all img present on pages that uses this css.
-    The image is converted to a block level element and then margin is set
-    to auto to center the image. Border is modified to apply specific styles.
-*/
-.original3 {
-    display: block;
-    margin: auto;
-    border-width: 4px;
-    border-style: solid;
-    border-color: darkslategray;
-}
-/*
-    The animation for the picture. It is for the final website project for
-    Professor Grant's place.
-*/
-.original3:hover {
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-duration: 1.3s;
+.big-wrapper.active .links {
+    transform: translateX(0);
+    box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.4);
 }
 
-@keyframes color-change {
-    0% {
-        border-color: darkred;
-    }
-
-    25% {
-        border-color: rebeccapurple;
-    }
-
-    50% {
-        border-color: darkslateblue;
-    }
-
-    75% {
-        border-color: #8F0018;
-    }
-
-    100% {
-        border-color: #3d5214;
-    }
-}
-.original-v2 {
-    display: block;
-    margin: auto;
-    border-width: 4px;
-    border-style: solid;
-    border-color: darkslategray;
-    opacity: 0.7;
-}
-/*
-    The following will lower the opacity of the picture as a 
-    visual effect
-*/
-.original-v2:hover {
+.big-wrapper.active .overlay {
+    pointer-events: all;
     opacity: 1;
 }
-.original-v1 {
-    display: block;
-    margin: auto;
-    border-width: 4px;
-    border-style: solid;
-    border-color: darkslategray;
-    filter: grayscale(100%)
-}
-/*
-    The following will bring the grayscale to 0% of the picture 
-    as a visual effect
-*/
-.original-v1:hover {
-    filter: grayscale(0%);
-}
-/*
-    The following animation2:hover will make sure that the
-    class will have these effects. Animation allows us to manipulate
-    the name, duration, smoothness, end of animation, amount, and
-    how it plays. Animation-play-state allows the animation to play
-    when that certain condition is met/not met.
-*/
-.animation2:hover {
-    animation: change-color 2s ease-in forwards infinite alternate;
-    animation-play-state: running;
-}
-/*
-    The keyframes allow various changes to when the animtion reaches a
-    certain percent.
-*/
-@keyframes change-color {
-    0% {
-        color: cornflowerblue;
-    }
-    25% {
-        color: darkred;
-    }
-    50% {
-        color: forestgreen;
-    }
-    75% {
-        color: rebeccapurple;
-    }
-    100% {
-        color: saddlebrown;
-    }
-}
-img.sideimage {
-    float: right;
-    padding: 10px;
-}
-/*
-    The following will modify the position of a link to be at the center
-*/
-a {
-    display: block;
-    text-align: center;
-}
-/*
-    span was used to allow the children to inherit the changes. This will
-    allow the pictures to be side by side
-*/
-span {
-    float: right;
-    width: 32.70%;
-    padding: 4px;
-}
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-/*
-    All of the following: .color, tr, table and caption are part of the
-    table element. They are used to distinguish different parts of the table
-    and modify them based on what is being said. margin-left and margin-right
-    helps with centering the table.
-
-    The following will also make sure the button is centered.
-*/
-button {
-    display: block;
-    margin: auto;
-}
-.color {
-    background-color: darkgray;
-}
-
-tr {
-    background-color: lightgrey;
-}
-
-table {
-    background-color: black;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-caption {
-    text-transform: capitalize;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: bold;
-}
-/*
-    This will modify the form element. Using text-align, the form element
-    boxes will be moved to the center of the screen.
-*/
-form {
-    text-align: center;
+.showcase-area {
+    padding: 2.5rem 0;
+    max-width: 700px;
     margin: 0 auto;
-    width: 300px;
 }
-/*
-    The following .container is used to modify the container before the
-    .input class changes
-*/
+
+.showcase-area .container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-gap: 2rem;
+}
+
+.big-title {
+    font-size: 1.1rem;
+}
+
+.text {
+    font-size: 0.95rem;
+    margin: 1.4rem 0 1.5rem;
+}
+
+.person {
+    width: 100%;
+    transform: none;
+}
+
+.logo h3 {
+    font-size: 1.25rem;
+}
+
+.shape {
+    bottom: -180px;
+    left: -150px;
+}}   
+
+@media screen and (max-width: 470px) {
 .container {
-    margin-bottom: 15px;
-    max-width: 300px;
+    padding: 0 1.5rem;
 }
-/*
-    The following will change the format of the input boxes to look neater
-    for the user to see. Display: block ensures that the width and height are
-    adjustable while padding allows some "space" between each of the class
-*/
-.input {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    border: 1px solid gray;
-    border-radius: 4px;
+
+.big-title {
+    font-size: 0.9rem;
 }
-.inputarea {
-    display: block;
-    width: 100%;
-    height: 100px;
-    font-size: 15pt;
-    padding: 12px;
-    border: 1px solid gray;
-    border-radius: 4px;
+
+.text {
+    margin: 1.1rem 0 1.5rem;
 }
-/* 
-    This is used to resize the image to allow some room for genuine sizes.
-*/
-.img
-{
-    height: 400px;
-    width: 1000px;
-}
-button {
+
+.showcase-area .btn {
+    font-size: 0.8rem;
+}}
+
+footer {
+    background-color: var(--dark);
+    color: var(--lightTwo);
+    padding: 20px;
     text-align: center;
 }
-/* 
-    This is used to resize the image to allow some room for genuine sizes.
-*/
-iframe {
-    display: block;
-    margin: auto;
-    border-width: 4px;
-    border-style: solid;
-    border-color: black;
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
-/*
-    The following keyframes are related to the the animation
-    of the pictures found within the scenary.html file.
-    This will help simualte a wiggle-like motion when the
-    user hovers over the picture.
-*/
-@keyframes shake {
-    0%, 7% {
-        transform: rotateZ(0);
-    }
+footer ul li {
+    margin: 0 10px;
+}
 
-    15% {
-        transform: rotateZ(-10deg);
-    }
+footer ul li a {
+    color: var(--lightTwo);
+    display: inline-block;
+    transition: 0.3s;
+}
 
-    20% {
-        transform: rotateZ(10deg);
-    }
-
-    25% {
-        transform: rotateZ(-10deg);
-    }
-
-    30% {
-        transform: rotateZ(6deg);
-    }
-
-    35% {
-        transform: rotateZ(-4deg);
-    }
-
-    40%, 100% {
-        transform: rotateZ(0);
-    }
+footer ul li a:hover {
+    color: var(--hoverColor);
+    transform: scale(1.05);
 }
