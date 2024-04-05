@@ -213,7 +213,7 @@ header .container {
 
 .bathroom {
     grid-column: span 2;
-    margin-left: 5%;
+    margin-left: 3%;
     margin-top: 25px;
     width: 100%;
     border-radius: 10px;
@@ -420,4 +420,28 @@ footer ul li a {
 footer ul li a:hover {
     color: var(--hoverColor);
     transform: scale(1.05);
+}
+
+.text-2 {
+    text-align: center;
+    color: var(--lightOne);
+    font-size: 1.1rem;
+    line-height: 2.3;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.image-container img {
+    width: 45%;
+    border-radius: 15px;
+}
+
+.newSection {
+    background-color: #d4d2e5;
+    padding: 20px;
 }
