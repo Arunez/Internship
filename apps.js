@@ -49,3 +49,20 @@ function events() {
 }
 
 events();
+
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('.animate');
+  
+  function checkScroll() {
+      sections.forEach(section => {
+          const distanceToTop = section.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          if (distanceToTop - windowHeight < 0) {
+              section.classList.add('active');
+          }
+      });
+  }
+  
+  window.addEventListener('scroll', checkScroll);
+  checkScroll();
+});
