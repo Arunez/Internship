@@ -445,30 +445,30 @@ footer ul li a:hover {
 
 figure {
     text-align: center;
-    max-width: 300px; /* Adjust maximum width of figure */
+    max-width: 300px;
 }
 
 figcaption {
-    margin-top: 10px; /* Add space between image and caption */
-    max-width: 300px; /* Set a maximum width for the caption */
-    margin: 0 auto; /* Center the caption horizontally */
+    margin-top: 10px;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 figcaption h3 {
     font-size: 1.2rem;
-    margin-bottom: 5px; /* Add space between title and description */
+    margin-bottom: 5px;
 }
 
 figcaption p {
     font-size: 1rem;
-    color: #888; /* Adjust color of description */
-    margin: 0; /* Reset margin to prevent affecting other elements */
+    color: #888;
+    margin: 0;
 }
 
 .image-container img {
-    width: 50%; /* Adjust size */
-    border-radius: 15px; /* Rounded corners */
-    margin-right: 10px; /* Add space between images */
+    width: 50%;
+    border-radius: 15px;
+    margin-right: 10px;
 }
 
 .newSection {
@@ -486,7 +486,7 @@ figcaption p {
 
 .video-section {
     text-align: center;
-    margin-top: 50px; /* Adjust the margin as needed */
+    margin-top: 50px;
 }
 
 .video-title {
@@ -513,8 +513,8 @@ figcaption p {
 
 #contactForm {
     background-color: rgb(255, 255, 255);
-    padding: 25px; /* Adjust padding as needed */
-    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    padding: 25px;
+    border-radius: 10px;
 }
 
 .inputBox {
@@ -578,4 +578,139 @@ figcaption p {
     color: #721c24;
     background-color: #f8d7da;
     border-color: #f5c6cb;
+}
+
+.titlev1 h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+}
+
+.titlev1 h1::after {
+    content:"";
+    height: 4px;
+    width: 230px;
+    background-color: #000;
+    display: black;
+    margin: auto;
+}
+
+.services {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color: #f1f0ed;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #e1d4c7;
+    transition: 0.4s ease;
+}
+
+.card .icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 28px;
+    color: var(--lightOne);
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: var(--lightOne);;
+}
+
+.button {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    background-color: #ab9f92;
+    transition: 0.4s ease;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+.wrapperv1 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.colorv1 {
+    color: white;
+}
+
+.testimonial {
+    padding:30px 100px;
+}
+
+article h1 {
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+article h1:after {
+    height: 5px;
+    width: 225px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+}
+
+article img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+
+blockquote {
+    font-family: sans-serif;
+    font-size: 27px;
+    margin-top: 30px;
+}
+
+article h5 {
+    text-transform: uppercase;
+    font-size: 27px;
+    margin-top: 30px;
 }
