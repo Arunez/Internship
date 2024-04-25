@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Clayseo Agency Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
     <main>
         <div class="big-wrapper light">
-            <img src="./img/shape.png" alt="" class="shape" />
+            <!-- <img src="./img/shape.png" alt="" class="shape" /> -->
         
         <!-- Start of my header -->
         <header>
@@ -43,11 +45,11 @@
         <div class="showcase-area">
             <div class="container">
                 <div class="left">
-                    <div class="big-title">
+                    <div class="big-title hidden">
                         <h1>Want to get a constant flow of customers?</h1>
                         <h1 class="h1Style">Meet Clayseo!</h1>
                     </div>
-            <p class="text">
+            <p class="text hidden">
                 We help bath and kitchen remodelers generate more leads using our local, paid, and organic SEO framework!
             </p>
 
@@ -69,7 +71,9 @@
             <br>
             <div class="image-container">
                 <figure>
-                    <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 1">
+                    <div class="enlarge-on-hover">
+                        <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 1">
+                    </div>
                     <figcaption>
                         <h3>Technical SEO</h3>
                         <p>Cleaning & Developing The Website For SEO & Paid Traffic Optimization
@@ -77,7 +81,9 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg" alt="Image 2">
+                    <div class="enlarge-on-hover">
+                        <img src="https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg" alt="Image 2">
+                    </div>
                     <figcaption>
                         <h3>Content Production</h3>
                         <p>Creating & Editing Content To Be Visible To The Target Customer
@@ -85,7 +91,9 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
+                    <div class="enlarge-on-hover">
+                        <img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
+                    </div>
                     <figcaption>
                         <h3>Locally Focused SEO</h3>
                         <p>Location Focused Search Engine Optimization
@@ -97,7 +105,9 @@
             <br>
             <div class="image-container">
                 <figure>
-                    <img src="https://images.pexels.com/photos/802024/pexels-photo-802024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
+                    <div class="enlarge-on-hover">
+                        <img src="https://images.pexels.com/photos/802024/pexels-photo-802024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
+                    </div>
                     <figcaption>
                         <h3>Local Ads</h3>
                         <p>Promotion Of Specific Location Targeted Keywords
@@ -105,7 +115,9 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="https://images.pexels.com/photos/6956303/pexels-photo-6956303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
+                    <div class="enlarge-on-hover">
+                        <img src="https://images.pexels.com/photos/6956303/pexels-photo-6956303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
+                    </div>
                     <figcaption>
                         <h3>Facebook & Instagram Ads</h3>
                         <p>Using Created Content To Market Services On Social Platforms
@@ -113,7 +125,9 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="https://images.pexels.com/photos/3861941/pexels-photo-3861941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
+                    <div class="enlarge-on-hover">
+                        <img src="https://images.pexels.com/photos/3861941/pexels-photo-3861941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
+                    </div>
                     <figcaption>
                         <h3>Ramp Up And Testing</h3>
                         <p>Increased Content & Ad Testing Capitalizing on Winning Creatives
@@ -124,8 +138,8 @@
             <br>
         </div>
         <br>
-        <h1 class="text-3">Curious about our work?</h1>
-        <p class="text-2">
+        <h1 class="text-3 hidden">Curious about our work?</h1>
+        <p class="text-2 hidden">
             Proven increase in converting analytics, local content inbound phone calls, search intent, and visibility!
         </p>
         <div class="video-section">
@@ -136,7 +150,7 @@
         <br>
         <br>
         <div class="newSectionv2">
-            <h2 class="text-3">Want to get in touch? Leave your details below!</h2>
+            <h2 class="text-3 hidden">Want to get in touch? Leave your details below!</h2>
             <br>
             <div class="container">
                 <div class="image-container">
@@ -171,13 +185,11 @@
                     </form>
                 </div>
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-            <script src="./mail.js"></script>
             <br>
         </div>
         <div>
             <br>
-            <h2 class="text-3">Meet the team!</h2>
+            <h2 class="text-3 hidden">Meet the team!</h2>
             <h2 class="text-3">Tentative!</h2>
             <br>
             <br>
@@ -233,6 +245,6 @@
 
 <!-- JavaScript Files -->
 <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-<script src="apps.js"></script>
+<!-- <script src="apps.js"></script> -->
 </body>
 </html>
