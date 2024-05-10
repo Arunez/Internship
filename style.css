@@ -715,14 +715,6 @@ article h5 {
     margin-top: 30px;
 }
 
-.enlarge-on-hover img {
-    transition: transform 0.3s ease; /* Transition effect on transform property */
-}
-
-.enlarge-on-hover img:hover {
-    transform: scale(1.1); /* Increase size by 10% on hover */
-}
-
 .containerv3 {
     max-width: 800px;
     width: 100%;
