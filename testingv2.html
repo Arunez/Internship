@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styletest.css">
     <script defer src="app.js"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Resources</a>
+            <a href="">Contacts</a>
+        </nav>
+    </header>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic quis quae deleniti voluptatum, fugit cumque ipsum reiciendis quod mollitia, eaque, aliquam exercitationem labore consequatur nam eligendi. Voluptatem, pariatur repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic quis quae deleniti voluptatum, fugit cumque ipsum reiciendis quod mollitia, eaque, aliquam exercitationem labore consequatur nam eligendi. Voluptatem, pariatur repellat!
+        </p>
+    </div>
     <h1 class="hidden">Hello World!</h1>
 
     <section class="hidden">
@@ -18,5 +34,18 @@
         <h2>Testingv2</h2>
         <p> BLAHBLAHBLAHBLAH </p>
     </section>
+    <div id="hide" class="main">This is main div.</div>
+    <button id="toggleButton">Hide and Show</button>
 </body>
+
+<script>
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    })
+</script>
 </html>
