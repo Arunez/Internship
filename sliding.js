@@ -1,3 +1,5 @@
+// Used for the sliding animation present on all the current pages.
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
