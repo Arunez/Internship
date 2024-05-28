@@ -38,3 +38,17 @@ var hideShowDiv = hideShowElement('hide');
 document.getElementById('toggleButton').addEventListener('click', function() {
     hideShowDiv();
 });
+
+function toggleAnswer(element) {
+    const faqItem = element.parentElement;
+    const answer = element.nextElementSibling;
+    const icon = element.querySelector('i');
+
+    if (faqItem.classList.contains("active")) {
+        faqItem.classList.remove("active");
+        icon.classList.remove("active");
+    } else {
+        faqItem.classList.add("active");
+        icon.classList.add("active");
+    }
+}
